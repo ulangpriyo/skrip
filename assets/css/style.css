@@ -1,0 +1,181 @@
+#size{
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header{
+	background-color: none; 
+	height: 55px;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+}
+#header img{
+	width: 100px;
+	margin-top: none;
+	position: absolute;
+	margin-left: 0px;
+}
+#header h1{
+	font-size: 25px;
+	list-style-type: none;
+	float: left;
+	margin-top: 1px;
+	margin-left: 100px;
+	position: absolute;
+
+}
+#header p{
+	position: absolute;
+	list-style-type: none;
+	float: left;
+	margin-top: 27px;
+	margin-left: 100px	
+}
+#header ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+
+}
+#header ul li{
+	display: inline-block;
+}
+#header ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+}
+#header ul li a:hover{
+	background-color: none;
+	color: black;
+}
+#content{
+	background: none;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 550px;
+	-webkit-border-radius: 3px;
+}
+
+#content img{
+	width: 1150px;
+	height: 400px;
+	-webkit-border-radius: 3px;
+}
+
+#content ul > li{
+	float: right;
+	display: inline;
+	margin-left: none;
+	list-style-type: none;
+	padding-right: 1px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#footer{
+	font-size: 11px;
+	background: none;
+	padding: 5px;
+	color: black;
+	text-align: right;
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 2px;
+}
+
+
+.box{
+	width:1145px;
+	height:145px;		
+	border-radius: 2px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: black;
+	padding: 0px 0px 0px 0px;
+	box-shadow:  1px 1px 4px #FFD5E7;
+	-moz-box-shadow: 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: 1px 1px 4px #FFD5E7;
+	background: #FFEFF6;
+}
+.boxlog{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width:300px;
+	height:250px;		
+	border-radius: 2px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border: 0px solid #FFC2DC;
+	outline: none;
+	color: #F072A9;
+	padding: 2px 1px 3px 8px;
+	box-shadow:  1px 1px 4px #FFD5E7;
+	-moz-box-shadow: 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: 1px 1px 4px #FFD5E7;
+}
+
+.nama_aplikasi{
+	margin-top: 10px;
+	position: absolute;
+	background: #808080;
+	-webkit-border-radius: 0px;;
+	width: 1150px;
+	height: 40px;
+	opacity: 0.3;
+}
+
+.tombol ul > li{
+	margin: 1px;
+	display: inline;
+	list-style-type: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#menu{
+	height: 50px;
+	position: absolute;
+	margin-left: 900px;
+	text-decoration: none;
+}
+#menu ul > li > button:hover{
+	background-color: white;
+	padding: 1px;
+	display: inline;
+}
+.gambar{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sdw:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button1{
+	background-color: #808080 ;opacity:2; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 27.3px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	float: right;
+	text-decoration: none;
+	margin-top: 15px;
+}
+.button1:hover{
+	background-color: #3e8e41;
+}
+.button2{
+	background-color: none; /* Green */
+}
+.button2:hover{
+	background-color: red;
+}
