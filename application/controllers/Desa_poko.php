@@ -16,7 +16,9 @@ class Desa_poko extends MY_Controller {
 	</div> <?php
 	$this->load->model('D_desa');
 	$data['hasil']=$this->D_desa->tampil();	
-	$data['hasilMon']=$this->D_desa->tampilMon();	
+	$data['hasilMon']=$this->D_desa->tampilMon();
+	$data['hasilPenDaf']=$this->D_desa->tampil_pendaf();	
+
 	$this->load->view('admin/lamanadmin',$data);
 	}
 
@@ -122,10 +124,25 @@ class Desa_poko extends MY_Controller {
 	}
 /* proses input data monitoring*/
  function input_monitoring()	{
-	$j_kegiatan = $this->input->post('j_kegiatan');
+	$j_kegiatan 	= $this->input->post('j_kegiatan');
+	$id_pembangunan	= $this->input->post('id_pembangunan');
+	$lokasi			= $this->input->post('lokasi');
+	$ukuran_selesai	= $this->input->post('ukuran_selesai');
+	$satuan_selesai	= $this->input->post('satuan_selesai');
+	$jml_hr_kerja	= $this->input->post('jml_hr_kerja');
+	$tgl 			= $this->input->post('tgl');
+
+
 	//------------------------------------------
 	$data_monitor = array(
-	'j_kegiatan'=>$j_kegiatan );
+	'j_kegiatan'	=>$j_kegiatan,
+	'id_pembangunan'=>$id_pembangunan,
+	'lokasi'		=>$lokasi,
+	'ukuran_selesai'=>$ukuran_selesai,
+	'satuan_selesai'=>$satuan_selesai,
+	'jml_hr_kerja'	=>$jml_hr_kerja,
+	'tgl'			=>$tgl
+	 );
 		$this->D_desa->tambah_data_monitor($data_monitor);
 		redirect('Desa_poko/Sadmin/input_monitoring?page=2');
 	}
@@ -176,4 +193,5 @@ public function hasil()
 		$this->D_desa->in_daftar($data_daftar);
 		redirect('Desa_poko/pembangunan');
 	}
+
 }

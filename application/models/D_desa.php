@@ -26,6 +26,18 @@ class D_desa extends CI_Model
 		return $hasil;
 	}
 }
+
+ function tampil_pendaf()
+ {   /* fungsi menampilkan data pembangunan */
+	$tampil_pendaf=$this->db->get('pendaftaran');
+	if ($tampil_pendaf->num_rows()>0) {
+		foreach ($tampil_pendaf->result() as $data) {
+			$hasilDaf[]=$data;
+			}
+		return $hasilDaf;
+	}
+}
+
  function tampilMon()
  {   /* fungsi menampilkan data monitoring */
 	$tampilMon=$this->db->get('monitoring');

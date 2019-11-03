@@ -22,6 +22,9 @@
 	#kanan{
 		font-size: 11px; float: right; position: relative; margin-right: 300px;
 	}
+	#monitoring{
+		font-size: 11px; float: right; position: relative; margin-right: 50px;
+	}
 	#bawah{
 		margin-top: 350px; position: absolute; width: 95%; margin-left: 3%; 
 	}
@@ -92,8 +95,8 @@
 	?>	 </div>		 
 	<?php 
 		case '3':    ?>  
-		 <div id="bawah">
-		    <?php $this->load->view('admin/view/tambahPemDes'); 
+		 <div id="monitoring">
+		    <?php $this->load->view('admin/view/pendaftar'); 
 			break; 
 	 }
   } ?> </div>
